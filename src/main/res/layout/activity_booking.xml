@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="#F5F7FA">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Booking"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/tvCarName"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:text="Car"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <EditText
+            android:id="@+id/etDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of days"
+            android:inputType="number"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM BOOKING" />
+
+    </LinearLayout>
+
+</RelativeLayout>
